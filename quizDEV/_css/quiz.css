@@ -1,0 +1,120 @@
+/* NOTE VARIAVEIS */
+:root
+{
+  /* cores que estão sendo usadas */
+  --rosaEscuro: rgb(199, 18, 63);
+  --ocean: #58cbb8;
+  --txtColor: #f0fff0;
+
+
+  /* cores para testar */
+  --azul:	#4f5bd5;
+  --azul2: #00aedb;
+  --roxo: #962fbf;
+  --roxo2: 	#a200ff;
+  --rosa:	#d62976;
+  --vermelho: #d41243;
+  --laranja: #fa7e1e;
+  --laranja2:#f47835;
+  --amarelo: #feda75;
+  --verde:#8ec127;
+  --lime:#d1ff91;
+  --pink: #ff7591;
+  --grey: #fff0f0;
+  --purple: #874170;
+}
+
+
+/* NOTE GLOBAL */
+
+body
+{
+   /* background-image: url('https://thumbs.gfycat.com/CorruptLinearElk-size_restricted.gif'); */
+   background-image: url(./../_images/background.png);
+  /* background-color: rgb(29, 28, 28);  */
+   
+}
+
+/* LINK SAIR */
+
+nav ul li a {
+  font-size: 1.8rem;
+}
+
+header h1 {
+  color: var(--txtColor);
+}
+
+.form-iniciar-quiz p {
+  color: var(--azul2);
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.form-iniciar-quiz
+{
+   /*border-radius: 20px;
+  background: #6383B2;
+  background: -webkit-linear-gradient(top left, #6383B2, #1B2273);
+  background: -moz-linear-gradient(top left, #6383B2, #1B2273);
+  background: linear-gradient(to bottom right, #6383B2, #1B2273); 
+  padding: 10px; */
+
+  /* teste */
+  background-color: rgb(20, 20, 20);
+  color: var(--txtColor);
+  font-weight: 500;
+  padding: 20px;
+  border-radius: 15px;
+  border: solid 2px whitesmoke;
+}
+
+button#botao-finalizar
+{
+  width: 250px;
+  height: 70px;
+  border-radius: 10px;
+  border:0px;
+  margin: 40px auto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: rgb(37, 36, 36);
+  background-color: whitesmoke;
+  /* color: var(--txtColor);
+  background-color: var(--azul2); */
+  
+}
+
+button#botao-finalizar:hover
+{
+  transform:scale(1.1);
+  cursor: pointer;
+  /* color: var(--txtColor);
+  background-color: var(--azul2); */
+}
+
+div.page-container
+{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9vh 1fr 7vh;
+  grid-template-areas: "header header"
+                       "main main"
+                       "footer footer";
+}
+
+/* NOTE MAIN */
+
+main {
+  grid-area: main; /* CSS GRID */
+  
+}
+
+main .bem-vindo
+{
+  width: 980px;
+  margin: 0 auto;
+  font-size: 1.2rem;
+}
+
+

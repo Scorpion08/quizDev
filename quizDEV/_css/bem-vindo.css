@@ -1,0 +1,107 @@
+/* NOTE VARIAVEIS */
+:root {
+  /* cores que estão sendo usadas */
+  --rosaEscuro: rgb(199, 18, 63);
+  --ocean: #58cbb8;
+  --txtColor: #f0fff0;
+
+
+  /* cores para testar */
+  --azul:	#4f5bd5;
+  --azul2: #00aedb;
+  --roxo: #962fbf;
+  --roxo2: 	#a200ff;
+  --rosa:	#d62976;
+  --vermelho: #d41243;
+  --laranja: #fa7e1e;
+  --laranja2:#f47835;
+  --amarelo: #feda75;
+  --verde:#8ec127;
+  --lime:#d1ff91;
+  --pink: #ff7591;
+  --grey: #fff0f0;
+  --purple: #874170;
+}
+
+/* NOTE GLOBAL */
+
+body {
+    background-image: url(./../_images/background.png);
+    /*background-image: url(https://i.pinimg.com/originals/88/15/63/881563d6444b370fa4ceea0c3183bb4c.gif);*/
+    /*background-image: url("https://cdn.pixabay.com/photo/2018/03/04/21/43/background-3199325_960_720.jpg"); */ 
+}
+
+/* NOTE HEADER */
+
+#principal nav ul li a {
+  color: var(--txtColor);
+  font-size: 1.8rem;
+}
+
+#principal nav ul li a:hover {
+  color: var(--azul2);
+
+}
+
+/* NOTE MAIN */
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+.bem-vindo {
+  background-color: rgb(20, 20, 20);
+  color: var(--azul2);
+  font-weight: 500;
+  width: 350px;
+  height: 350px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  border: solid 2px whitesmoke;
+}
+
+.wrapper-form {
+  /* background-color: khaki; */
+  width: 235px;
+}
+
+.bem-vindo form label {
+  display: block;
+}
+
+.form-iniciar-quiz, h2 {
+  margin-bottom: 12px;
+}
+
+.bem-vindo form input #submit {
+  width: 250px;
+}
+
+.inp input, button {
+  width: 100%;
+}
+
+
+
+button#submit{
+  margin-top: 40px;
+  background-color: var(--azul2);
+  border: none;
+  border-radius: 5px;
+  padding: 7px 0;
+}
+
+button a{
+  color: var(--txtColor);
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+

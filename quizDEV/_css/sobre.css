@@ -1,0 +1,231 @@
+/* NOTE VARIAVEIS */
+:root {
+  /* cores que estão sendo usadas */
+  --rosaEscuro: rgb(199, 18, 63);
+  --ocean: #58cbb8;
+  --txtColor: #f0fff0;
+
+  /* cores para testar */
+  --azul:	#4f5bd5;
+  --azul2: #00aedb;
+  --roxo: #962fbf;
+  --roxo2: 	#a200ff;
+  --rosa:	#d62976;
+  --vermelho: #d41243;
+  --laranja: #fa7e1e;
+  --laranja2:#f47835;
+  --amarelo: #feda75;
+  --verde:#8ec127;
+  --lime:#d1ff91;
+  --pink: #ff7591;
+  --grey: #fff0f0;
+  --purple: #874170;
+}
+
+/* NOTE RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+}
+
+/* NOTE GLOBAL */
+
+body {
+  font-size: 1rem; /* 16px */
+  color: var(--txtColor);
+}
+
+img {
+  width: 100%;
+}
+
+video {
+  right: 0;
+  bottom: 0;
+  width: 100%; 
+  height: 100%;
+  object-fit: fill;
+}
+
+a {
+  text-decoration: none;
+  color: var(--txtColor);
+}
+
+
+/* NOTE  CSS GRID */
+
+div.page-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 9vh 84vh 7vh;
+  grid-template-areas: "header header"
+                       "main main"
+                       "footer footer";
+}
+
+
+/* NOTE HEADER PRINCIPAL */
+
+header {
+  background: rgb(37, 36, 36);
+  color: var(--azul2);
+  grid-area: header; /* CSS GRID */
+  display: flex;
+  align-items: center; /* flex alinha vertical*/
+  justify-content: space-between; /* flex alinha horizontal */
+}
+
+header h1 {
+  padding-left: 10px;
+}
+
+nav ul li{
+  display: inline;
+  padding: 0 10px;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  color: var(--azul2);
+}
+
+/* MENU CARREIRAS */
+
+.dropdown {
+	float: left;
+	overflow: hidden;
+}
+
+.dropdown {
+	/* font-size: 16px;   */
+	border: none;
+	outline: none;
+	/* color: white; */
+	/* padding: 14px 16px; */
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+.dropdown:hover  {
+  background-color:var(--azul2);
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	/* min-width: 160px; */
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: var(--azul2);
+  color: whitesmoke;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+img#empresa {
+  height: 500px;
+  padding: 20px 20px;
+}
+
+
+/* NOTE MAIN */
+
+main {
+  grid-area: main; /* CSS GRID */
+  margin: 40px 0;
+}
+
+main h1 {
+  text-align: center;
+}
+
+.wrapper-form {
+  color: #333;
+  background-color: white;
+  padding: 20px 20px;
+}
+
+article {
+  width: 100%;
+  height: 100%;
+}
+
+#zoysGif {
+  width: 100%;
+  height: 100%;
+}
+
+.iniciarQuiz {
+  position: absolute;
+  top: 9%;
+  font-size: 1.3rem;
+  background: rgba(0, 0, 0, 0.7);
+  color: #f1f1f1;
+  width: 100%;
+  height: 84.1%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* flex alinha horizontal */
+  align-items: center; /* flex alinha vertical*/
+}
+
+.iniciarQuiz h1 {
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+button.btn {
+  font-size: 1.2rem;
+  margin-top: 60px;
+  padding: 10px 15px;
+  background: var(--azul2);
+  border: none;
+  border-radius: 6px;
+}
+
+button.btn:hover {
+  background-color: rgba(238, 236, 236, 0.966);
+  cursor: pointer;
+}
+
+button.btn a {
+  color: var(--txtColor);
+  font-weight: 500;
+  padding: 21px 0;
+}
+
+button.btn a:hover {
+  color: var(--azul2);
+}
+
+
+/* NOTE FOOTER PRINCIPAL */
+
+footer {
+  background: rgb(37, 36, 36);
+  color: var(--txtColor);
+  grid-area: footer; /* CSS GRID */
+  display: flex;
+  justify-content: center; /* flex alinha horizontal */
+  align-items: center; /* flex alinha vertical*/
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Vocação Dev | QUIZ</title>
+	<link rel="stylesheet" href="./_css/style.css">
+	<link rel="stylesheet" href="./_css/bem-vindo.css">
+</head>
+
+<body>
+	<div class="page-container">
+		<header id="principal">
+			<h1>Vocação Dev</h1>
+			<!-- MENU SUPERIOR -->
+			<nav>
+				<ul>
+					<li><a href="./index.html">Sair</a></li>
+				</ul>
+			</nav>
+		</header>
+
+		<main>
+			<section class="bem-vindo">
+				<h2>Bem Vindo!</h2>
+				<div class="wrapper-form">
+
+					<!-- no action="#PaginaPHP" confirmar como fazer. se é pagina php ou js -->
+
+					<form action="./quiz.html" method="POST" id="quiz">
+						<div class="form-iniciar-quiz inp">
+							<label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite aqui o seu nome" required autofocus>
+            </div>
+                
+            <button id="submit" value="iniciar o quiz"><a href="./quiz.html">Iniciar o quiz</a></button>
+          </form>
+          <!-- <button class="sair"><a href="./index.html">Sair</a></button> -->
+        </div> <!--fim wrapper-form-->
+        
+      </section>
+    </main>
+
+    <!-- <footer id="principal">
+      <h4>Desenvolvido por zoys_design &reg; 2019</h4>
+    </footer> -->
+  </div> <!-- fim container -->
+  <script src="./_js/quiz.js"></script>
+</body>
+</html>
