@@ -1,5 +1,5 @@
 # quizDev
 ## Tecnologias usadas
-*[HTML]
-*[CSS]
-*[Javascript]
+* [HTML]
+* [CSS]
+* [Javascript]
